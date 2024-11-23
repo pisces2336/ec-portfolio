@@ -1,3 +1,11 @@
+# ec-portfolio
+
+## 10_docs
+
+### ルール
+
+- ER 図の更新時は svg ファイルに export すること
+
 ## 30_server
 
 ### 環境構築
