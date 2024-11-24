@@ -1,0 +1,35 @@
+[
+  {
+    "model": "accounts.role",
+    "pk": "001bfca9-a7e3-4e84-9327-2eb974a69a01",
+    "fields": {
+      "created_at": "2024-11-24T03:52:39.966Z",
+      "updated_at": "2024-11-24T03:52:39.966Z",
+      "code": 20,
+      "name": "staff"
+    }
+  },
+  {
+    "model": "accounts.role",
+    "pk": "6820e6a5-ddd5-4794-a902-baf1c0e944bf",
+    "fields": {
+      "created_at": "2024-11-24T03:52:26.502Z",
+      "updated_at": "2024-11-24T03:53:35.461Z",
+      "code": 10,
+      "name": "customer"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": "b24fbb4f-01e5-4c17-acf2-fbe366e5bf49",
+    "fields": {
+      "created_at": "2024-11-24T03:58:44.358Z",
+      "updated_at": "2024-11-24T03:58:44.358Z",
+      "role": "001bfca9-a7e3-4e84-9327-2eb974a69a01",
+      "name": "システムユーザー",
+      "email": "test@example.com",
+      "password": "pbkdf2_sha256$870000$6rUiX7Az09n9lOXgUpvKKZ$6tD9BDOur1/pSBdThilTMYSCq3vDQKXFwYmkmz1IDrc=",
+      "last_login": null
+    }
+  }
+]

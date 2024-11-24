@@ -1,3 +1,11 @@
+# ec-portfolio
+
+## 10_docs
+
+### ルール
+
+- ER 図の更新時は svg ファイルに export すること
+
 ## 30_server
 
 ### 環境構築
@@ -6,3 +14,6 @@
 - `source .venv/Scripts/activate`
 - `python -m pip install --upgrade pip`
 - `pip install -r requirements.txt`
+- `python manage.py migrate`
+- `python manage.py loaddata ./fixtures/accounts_initial.json`
+- `python manage.py runserver`
