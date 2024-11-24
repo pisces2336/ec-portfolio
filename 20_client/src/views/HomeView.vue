@@ -3,6 +3,8 @@
 
 <template>
   <main>
-    <h1>Hello!</h1>
+    <v-card
+      title="Hello"
+    />
 </main>
 </template>

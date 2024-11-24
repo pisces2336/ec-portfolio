@@ -13,9 +13,11 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "mdi": "^2.2.43",
     "pinia": "^2.2.6",
     "vue": "^3.5.12",
-    "vue-router": "^4.4.5"
+    "vue-router": "^4.4.5",
+    "vuetify": "^3.7.4"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
