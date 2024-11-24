@@ -1,15 +1,15 @@
 from uuid import UUID
 
 from core.models import get_or_404
+from core.views import BaseAPIView
 from rest_framework.request import Request
 from rest_framework.response import Response
-from rest_framework.views import APIView
 
 from .models import Role, User
 from .serializers import RoleSerializer, UserSerializer
 
 
-class RoleCreateListView(APIView):
+class RoleCreateListView(BaseAPIView):
     # Create
     def post(self, request: Request):
         seliarizer = RoleSerializer(data=request.data)
@@ -24,7 +24,7 @@ class RoleCreateListView(APIView):
         return Response({"roles": seliarizer.data})
 
 
-class RoleDetailUpdateDeleteView(APIView):
+class RoleDetailUpdateDeleteView(BaseAPIView):
     # Detail
     def get(self, request: Request, id: UUID):
         role = get_or_404(Role, id=id)
@@ -46,7 +46,7 @@ class RoleDetailUpdateDeleteView(APIView):
         return Response()
 
 
-class UserCreateListView(APIView):
+class UserCreateListView(BaseAPIView):
     # Create
     def post(self, request):
         role_code = request.data.pop("role_code")
@@ -65,7 +65,7 @@ class UserCreateListView(APIView):
         return Response({"users": serializer.data})
 
 
-class UserDetailUpdateDeleteView(APIView):
+class UserDetailUpdateDeleteView(BaseAPIView):
     # Detail
     def get(self, request, id):
         user = get_or_404(User, id=id)
